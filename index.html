@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="static/styles.css">
+  <title>Задание 2</title>
+  <script src="static/main.js"></script>
+</head>
+<body onload="func()">
+  <div id="video-bg">
+    <video width="100%" height="auto" muted="muted" preload="auto" autoplay="autoplay"
+    loop="loop" poster="static/resources/photo.png">
+    <source src="static/resources/video.mp4" type="video/mp4"></source>
+    <source src="static/resources/video.webm" type="video/webm"></source>
+  </video>
+</div>
+
+<div class="outer">
+  <div class="inner">
+    <img onclick="soundClickE()" src="static/resources/photo.png"/>
+
+    <table>
+      <tr>
+        <th id="fio_name" onclick="changeColorOnClick(this.id)" colspan="1">ФИО</th>
+        <td id="fio_pole" onclick="changeColorOnClick(this.id)"colspan="4">Бунтарь Афанасий Игнатьевич</td>
+      </tr>
+      <tr>
+        <th id="city_name" onclick="changeColorOnClick(this.id)" colspan="1">Город</th>
+        <td id="city_pole" onclick="changeColorOnClick(this.id)"colspan="4">Москва</td>
+      </tr>
+      <tr>
+        <th id="birth_name" onclick="changeColorOnClick(this.id)" colspan="1">Дата Рождения</th>
+        <td id="birth_pole" onclick="changeColorOnClick(this.id)" colspan="4">01.11.1991</td>
+      </tr>
+      <tr>
+        <th colspan="1">Телефон</th>
+        <td colspan="4">
+          <a onclick="soundClickCalling()" target="_blank"
+          href="https://clck.ru/Rd8Xk">
+          <div style="height:100%;width:100%">
+            +7 (800) 555-35-35
+          </div>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <th id="mail_name" onclick="changeColorOnClick(this.id)" colspan="1">Почта</th>
+      <td id="mail_pole" onclick="changeColorOnClick(this.id)" colspan="4">mymail@mail.ru</td>
+    </tr>
+    <tr>
+      <th colspan="5" class="th-full-string">О себе</th>
+    </tr>
+    <tr>
+      <td id="about" onclick="getRandomPhrase()" colspan="5"></td>
+    </tr>
+    <tr>
+      <th colspan="5" class="th-full-string">Мое расписание</th>
+    </tr>
+    <tr>
+      <th class="th-weekday">Понедельник</th>
+      <th class="th-weekday">Вторник</th>
+      <th class="th-weekday">Среда</th>
+      <th class="th-weekday">Четверг</th>
+      <th class="th-weekday">Пятница</th>
+    </tr>
+    <tr>
+      <td class="td-last">8:30 - 15:50</td>
+      <td class="td-last">10:10 - 14:00</td>
+      <td class="td-last">Выходной</td>
+      <td class="td-last">14:10 - 15:50</td>
+      <td class="td-last">8:30 - 10:10</td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>
